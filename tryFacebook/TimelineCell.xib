@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Timeline" rowHeight="234" id="KGk-i7-Jjw" customClass="TimelineCell" customModule="tryFacebook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="234"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="234"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61a-uL-dVp">
+                        <rect key="frame" x="8" y="8" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="BNe-yl-cLl"/>
+                            <constraint firstAttribute="height" constant="45" id="a8y-EC-Tar"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="profile"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Kazutaka Shimizu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsl-lB-qjr">
+                        <rect key="frame" x="61" y="8" width="251" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zu5-Fv-bRz">
+                        <rect key="frame" x="8" y="67" width="304" height="83"/>
+                        <string key="text">コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="昨日 13:01 ・ 東京都調布市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsY-ah-yey">
+                        <rect key="frame" x="61" y="29" width="251" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.80392158030000005" green="0.80392158030000005" blue="0.80392158030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Zu5-Fv-bRz" firstAttribute="top" secondItem="61a-uL-dVp" secondAttribute="bottom" constant="14" id="8Ww-Hu-g0l"/>
+                    <constraint firstItem="Fsl-lB-qjr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ADY-Ny-WO8"/>
+                    <constraint firstItem="Zu5-Fv-bRz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="NRN-dH-mM2"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Zu5-Fv-bRz" secondAttribute="bottom" constant="76" id="Oaw-E8-Xu0"/>
+                    <constraint firstItem="HsY-ah-yey" firstAttribute="top" secondItem="Fsl-lB-qjr" secondAttribute="bottom" id="PD8-Ts-q4t"/>
+                    <constraint firstItem="Fsl-lB-qjr" firstAttribute="leading" secondItem="61a-uL-dVp" secondAttribute="trailing" constant="8" id="Pei-I3-b8O"/>
+                    <constraint firstItem="Zu5-Fv-bRz" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="TTT-HZ-a6Y"/>
+                    <constraint firstItem="61a-uL-dVp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Uoh-TH-h5q"/>
+                    <constraint firstItem="HsY-ah-yey" firstAttribute="leading" secondItem="61a-uL-dVp" secondAttribute="trailing" constant="8" id="bCF-FF-Fwn"/>
+                    <constraint firstItem="Fsl-lB-qjr" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="m8u-ej-N0U"/>
+                    <constraint firstItem="61a-uL-dVp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="oW4-hB-MRX"/>
+                    <constraint firstItem="HsY-ah-yey" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="qv0-6W-AdU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="35" y="2"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile" width="541" height="541"/>
+    </resources>
+</document>
