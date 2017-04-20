@@ -27,7 +27,7 @@ class TimelinePostCell: UITableViewCell {
         return cb
     }()
     var buttonAreaBorder: UIView! = {
-        let bab = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 1))
+        let bab = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 0.5))
         bab.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         return bab
     }()
